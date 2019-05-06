@@ -1,0 +1,12 @@
+<div class="row mb-4">
+	<div class="col-3">
+		<button (click)="switchForm('DEFAULT')" type="show" class="btn btn-primary">Default Form</button>
+  </div>
+  <div class="col-3">
+    <button (click)="switchForm('MONEY')" type="button" class="btn btn-secondary">Money Form</button>
+  </div>
+</div>
+
+
+ 
+  <formly-form [model]="model" [fields]="fields" [form]="form1" (modelChange)="modelChange($event)"></formly-form>
